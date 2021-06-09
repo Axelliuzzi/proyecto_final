@@ -1,0 +1,77 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+/*-----Generales------*/
+ body {
+   background-image: linear-gradient(to top, $color-2 0%,#2E3559 50% );
+   font-family: "Krub", sans-serif;
+   font-style: inherit;
+   text-align: center;
+ }
+
+ .empresa {
+   background: #fff;
+ }
+
+ .formulario {
+   background: #fff;
+   height: 100vh;
+   padding-top: 4rem;
+ }
+
+/*-----Botones-----*/
+ .boton {
+   display: flex;
+   flex-direction: column;
+   color: #F2F2F2;
+   text-decoration: none;
+   text-transform: uppercase;
+   font-size: 1rem;
+   font-weight: 700;
+   background-color: #3D9DF2;
+   padding: 1rem 2rem;
+ }
+
+ .entrar a{
+  background-color: $color-2;
+  color: #D9D9D9;
+
+  &:hover {
+   background-color: #a2acdf;
+   color: #0D0D0D;
+  }
+}
+
+
+ .redes a{
+   background-color: #D9D9D9;
+   color: #0D0D0D;
+
+   &:hover {
+    background-color: $color-2;
+    color: #D9D9D9;
+  }
+ }
+
+
+/*---Titulos---*/
+
+.title {
+  color: #e7a137;
+  padding: 1rem;
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/*---Parrafos---*/
+
+.parrafo {
+  color: #0D0D0D;
+}
+
+
+
+
+

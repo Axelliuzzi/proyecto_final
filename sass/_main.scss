@@ -1,0 +1,130 @@
+/*---video y iframe---*/
+
+.conter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+  
+  .video {
+    width: 100vw;
+    height: 30vh;
+  }
+  
+  /*-----ListaDeProductos-----*/
+  
+  .productos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    border: 1px solid #e7a137;
+    padding: 1rem;
+  }
+  
+  .productos--lista {
+  color: #F2F2F2;
+    list-style: none;
+  }
+  
+  .producto {
+    display: block;
+    padding: 2rem;
+    margin: .5rem;
+    border: 1px;
+    border-color: black;
+    border: 1px solid #e7a137;
+    background-color: #2E3559;
+  }
+  
+  /*-----Terminos-----*/
+
+  .terminos {
+      padding: 3rem 0;
+  }
+
+  /*--- Tablet ---*/
+  
+  @media (min-width: 480px) {
+    .video {
+      width: 80vw;
+      height: 50vh;
+    }
+  
+    .productos {
+      display: flex;
+      flex-direction: row;
+    }
+  
+    .redes {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 10px;
+
+      a {
+        margin: 0 10px;
+      }
+    }
+  
+  }
+  
+  /*---Desktop---*/
+  
+  @media (min-width: 1200px) {
+  
+  
+    /*-----Botones-----*/
+     .boton {
+       border-radius: 20px;
+     }
+    
+     .redes a{
+       margin: 0 10px;
+     }
+    
+    /*-----Hero-----*/
+    .hero {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+  
+    .redes {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    /*---video y iframe---*/
+    
+    .video {
+      width: 50vw;
+      height: 50vh;
+    }
+    
+    /*-----ListaDeProductos-----*/
+    
+    .productos {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      width: 100%;
+      border: 1px solid #e7a137;
+      padding: 1rem;
+    }
+    
+    .producto {
+      display: block;
+      padding: 2rem;
+      border: 1px;
+      border-color: black;
+      border: 1px solid #e7a137;
+      background-color: #2E3559;
+    }
+  }
+  
