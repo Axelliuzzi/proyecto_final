@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Cinema Online - Lo mejor del Cine llegó a tu hogar</title>
     <meta
       name="description"
@@ -11,17 +12,20 @@
     />
     <meta name="keywords" content="Cinema, Cine, Online, Peliculas" />
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
       crossorigin="anonymous"
     />
+
     <link rel="preload" href="./css/style.css" as="style" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
@@ -30,10 +34,10 @@
     <!--Header-->
     <header>
       <!--topBar-->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
-          <a class="navbar-brand" href="#"
-            ><img src="assets/img/uber.png" alt="Logo" class="logoB"
+          <a class="navbar-brand" href="index.html"
+            ><img src="assets/img/Cinema+_logo.png" alt="Logo" class="logoB"
           /></a>
           <button
             class="navbar-toggler"
@@ -72,104 +76,191 @@
 
       <!--Hero-->
 
-      <div
-        id="carouselExampleIndicators"
-        class="carousel slide"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              src="assets/img/31Z_2103.w023.n001.225B.p1.225.jpg"
-              class="d-block w-100"
-              alt="movie1"
-            />
-          </div>
-          <div class="carousel-item">
-            <img
-              src="assets/img/123Z_2012.w020.n001.940B.p15.940.jpg"
-              class="d-block w-100"
-              alt="movie2"
-            />
-          </div>
-          <div class="carousel-item">
-            <img src="assets/img/13530.jpg" class="d-block w-100" alt="movie3" />
+      <section id="hero">
+        <div class="hero container">
+          <div class="hero-text container">
+            <h1>¡Viví el cine<br />como nunca!</h1>
+            <h2>¡Disfruta de las mejores peliculas en tu hogar!</h2>
+            <a href="cartelera.html" class="btn-get-started">Empezar</a>
           </div>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-
-      <div class="contenedor hero">
-        <h1 class="title">Inicio</h1>
-        <div class="entrar">
-          <a class="boton" href="">Entrar</a>
-        </div>
-        <div class="redes">
-          <a class="boton" href="">Facebook</a>
-          <a class="boton" href="">Instagram</a>
-          <a class="boton" href="">Pinterest</a>
-        </div>
-      </div>
+      </section>
     </header>
 
     <!--Cuerpo-->
 
-    <!--Videos-->
-    <main class="conter">
-      <h2 class="title">Este es el video principal</h2>
-      <iframe
-        class="video"
-        src="https://www.youtube.com/embed/bjKA55NV0qs"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
-    </main>
+      <!-- ======= Beneficios ======= -->
+      <section id="services" class="services">
+        <div class="container">
+          <div class="section-title">
+            <h3>Disfrutá de estos <span>beneficios</span></h3>
+            <p>¿Por qué unirte a nuestra comunidad?</p>
+          </div>
+
+          <div class="row justify-content-center">
+            <div
+              class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"
+            >
+              <div class="icon-box">
+                <div class="icon">
+                  <img
+                    style="width: 150px"
+                    src="assets/img/beneficio1.png"
+                    alt=""
+                  />
+                </div>
+                <h4 class="title"><a href="">Ediciones Especiales</a></h4>
+                <p class="description">
+                  Cada mes, ¡un nuevo estreno! <br> No te lo pierdas
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"
+            >
+              <div class="icon-box">
+                <div class="icon">
+                  <img
+                    style="width: 150px"
+                    src="assets/img/beneficio2.png"
+                    alt=""
+                  />
+                </div>
+                <h4 class="title"><a href="">Exclusividad</a></h4>
+                <p class="description">
+                  Acceso a grupo privado de facebook donde compartir info y novedades
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"
+            >
+              <div class="icon-box">
+                <div class="icon">
+                  <img
+                    style="width: 150px"
+                    src="assets/img/beneficio3.png"
+                    alt=""
+                  />
+                </div>
+                <h4 class="title"><a href="">Historia de fondo</a></h4>
+                <p class="description">
+                  Recibiras la historia detrás de la creación de cada pelicula.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======= Sorteos ======= -->
+      <section id="about" class="about club">
+        <div class="container">
+          <div class="section-title">
+            <h3 id="club-pq">Sorteos <span id="club">Exclusivos</span></h3>
+            <p>Beneficio extra al unirte a nuestra comunidad</p>
+          </div>
+
+          <div class="row content">
+            <div class="col-lg-6 tocadisco">
+              <img src="assets/img/sorteosExclusivos.png" alt="tocadisco" />
+            </div>
+            <div class="col-lg-6" id="sorteo">
+              <p>
+                Sorteo trimestral de unos tickes exclusivos. Vas a tener la
+                oportunidad de salir ganador entre todos nuestros miembros para
+                disfrutar de estas mágicas peliculas.
+              </p>
+
+              <p>
+                Exclusivo para nuestra comunidad.
+              </p>
+
+              <p>
+                Cada mes sobre distintos generos.
+              </p>
+              
+              <a href="promociones.html" class="btn-learn-more"
+                >Leer Más</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End About Section -->
+
+      <!-- ======= Pasos Section ======= -->
+      <section id="pasos" class="pasos">
+        <div class="container">
+          <div class="section-title">
+            <h3>Cómo <span>Empezar</span></h3>
+            <p>Tené tu Membresia en estos cuatro simples pasos.</p>
+          </div>
+
+          <div class="row">
+            <div
+              class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"
+            >
+              <div class="icon-box sumate">
+                <div class="icon">
+                  <img style="width: 200px" src="assets/img/paso1.png" alt="" />
+                </div>
+                <h4 class="title"><a href="">Sumate a Cinema+</a></h4>
+              </div>
+            </div>
+
+            <div
+              class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"
+            >
+              <div class="icon-box elegi">
+                <div class="icon">
+                  <img style="width: 200px" src="assets/img/paso2.png" alt="" />
+                </div>
+                <h4 class="title"><a href="">Elegí tus géneros favoritos</a></h4>
+              </div>
+            </div>
+
+            <div
+              class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"
+            >
+              <div class="icon-box completa">
+                <div class="icon">
+                  <img style="width: 200px" src="assets/img/paso3.png" alt="" />
+                </div>
+                <h4 class="title"><a href="">Completá todos tus datos</a></h4>
+              </div>
+            </div>
+
+            <div
+              class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0"
+            >
+              <div class="icon-box disfruta">
+                <div class="icon">
+                  <img style="width: 200px" src="assets/img/paso4.png" alt="" />
+                </div>
+                <h4 class="title">
+                  <a href="">Disfrutá del buen cine en tu casa</a>
+                </h4>
+                <!-- <p class="description">
+                  At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                  blanditiis
+                </p> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Pasos Section -->
 
     <!--listaDeProductos-->
-    <section class="conter">
-      <h2 class="title">Próximos Estrenos</h2>
-      <div class="productos productos--lista">
+    <section class="estrenos">
+      <div class="section-title">
+        <h3>Próximos <span>Estrenos</span></h3>
+        <p>Los mejores estrenos exclusivos estan en Cinema+</p>
+      </div>
+      <div class="container productos productos--lista">
         <div class="card" style="width: 18rem">
           <img
             src="assets/img/afiches/avatar.jpg"
@@ -217,9 +308,9 @@
     <footer>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-md">
-          <a class="navbar-brand" href="#">Pie de pagina</a>
-          <a class="navbar-brand" href="#">Todos los derechos reservados ®</a>
-          <a class="navbar-brand" href="#">bootstrap</a>
+          <a class="navbar-brand" href="index.html">Cinema+</a>
+          <a class="navbar-brand" href="empresa.html">Todos los derechos reservados ®</a>
+          <a class="navbar-brand" href="contacto.html">Argentina</a>
         </div>
       </nav>
     </footer>
