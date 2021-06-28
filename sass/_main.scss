@@ -1,130 +1,366 @@
-/*---video y iframe---*/
+/*--------------------------------------------------------------
+# Beneficios
+--------------------------------------------------------------*/
+.services {
+  padding-bottom: 30px;
+  margin-bottom: 50px;
 
-.conter {
+  .icon-box {
+    padding: 20px 20px;
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 2px 0 35px 0 rgba(68, 88, 144, 0.12);
+    transition: all 0.3s ease-in-out;
+    border-radius: 8px;
+    z-index: 1;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.services .icon-box::before {
+  content: "";
+  position: absolute;
+  background: #fdeff2;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 100%;
+  transition: all 0.4s;
+  z-index: -1;
+}
+
+.services .icon-box:hover::before {
+  background: #fab037;
+  top: 0;
+  border-radius: 0px;
+}
+
+.services .icon {
+  margin-bottom: 15px;
+
+  i {
+    font-size: 48px;
+    line-height: 1;
+    color: #91278d;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+.services .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+
+  a {
+    color: #111;
+  }
+}
+
+.services .description {
+  font-size: 15px;
+  line-height: 28px;
+  margin-bottom: 0;
+}
+
+.services .icon-box:hover .title a,
+.services .icon-box:hover .description {
+  color: #fff;
+}
+
+.services .icon-box:hover .icon i {
+  color: #fff;
+}
+
+
+/*--------------------------------------------------------------
+# Sorteos
+--------------------------------------------------------------*/
+#about {
+  background-color: #fab037;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:50px 0 ;
+}
+
+.tocadisco img {
+  width: 500px;
+  max-width: 100vw;
+}
+
+#sorteo {
+  margin-top: 80px;
+}
+
+.club {
+  color: #fff;
+}
+
+#club-pq {
+  font-weight: 400;
+}
+
+#club {
+  color: #fff;
+  font-weight: 700;
+}
+
+.about .content h3 {
+  font-weight: 600;
+  font-size: 26px;
+}
+
+.about .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about .content ul li {
+  padding-left: 28px;
+  position: relative;
+}
+
+.about .content ul li + li {
+  margin-top: 10px;
+}
+
+.about .content ul i {
+  position: absolute;
+  left: 0;
+  top: 2px;
+  font-size: 20px;
+  color: #fab037;
+  line-height: 1;
+}
+
+.about .content p:last-child {
+  margin-bottom: 0;
+}
+
+.about .content .btn-learn-more {
+  font-family: "Nunito", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 50px;
+  transition: 0.3s;
+  line-height: 1;
+  color: #fff;
+  background: #393939;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+  margin-top: 6px;
+}
+
+.about .content .btn-learn-more:hover {
+  background: #fff;
+  color: #393939;
+  text-decoration: none;
+}
+
+@media (max-width: 991px) {
+  .tocadisco {
+    display: flex;
+    justify-content: center;
+  }
+
+  #sorteo {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    padding: 2rem;
+    align-items: center;
   }
-  
-  .video {
-    width: 100vw;
-    height: 30vh;
+
+  #sorteo p {
+    text-align: center;
   }
-  
-  /*-----ListaDeProductos-----*/
-  
+}
+
+
+/*--------------------------------------------------------------
+# Pasos
+--------------------------------------------------------------*/
+.pasos {
+  padding: 30px 0;
+  margin: 50px 0;
+}
+
+.pasos p {
+  font-size: 18px;
+}
+
+.pasos .sumate {
+  width: 100%;
+  padding: 30px 30px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+  z-index: 1;
+  text-align: center;
+  color: #fff;
+}
+
+.pasos .elegi {
+  width: 100%;
+  padding: 30px 30px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+  z-index: 1;
+  text-align: center;
+  color: #fff;
+}
+
+.pasos .completa {
+  width: 100%;
+  padding: 30px 30px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+  z-index: 1;
+  text-align: center;
+  color: #fff;
+}
+
+.pasos .disfruta {
+  width: 100%;
+  padding: 30px 30px;
+  position: relative;
+  overflow: hidden;
+  /* background: url(/assets/img/hero.png); */
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+  z-index: 1;
+  text-align: center;
+  color: #fff;
+}
+
+.pasos .icon-box::before {
+  content: "";
+  position: absolute;
+  background: #fdeff2;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 100%;
+  transition: all 0.4s;
+  z-index: -1;
+}
+
+.pasos .icon-box:hover::before {
+  background: #404040;
+  top: 0;
+  border-radius: 0px;
+}
+
+.pasos .icon {
+  margin-bottom: 15px;
+}
+
+.pasos .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.pasos .title a {
+  color: #91278d;
+  font-size: 20px;
+  font-weight:500;
+}
+
+.pasos .description {
+  font-size: 15px;
+  line-height: 28px;
+  margin-bottom: 0;
+}
+
+.pasos .icon-box:hover .title a,
+.pasos .icon-box:hover .description {
+  color: #fff;
+}
+
+/*-----ListaDeProductos-----*/
+.estrenos {
+  background-image: radial-gradient(circle at 0% 0%, #ffff4f 0, #fffd44 12.5%, #ffe53d 25%, #ffcb39 37.5%, #faaf36 50%, #e89535 62.5%, #d87e35 75%, #ca6b36 87.5%, #bd5c38 100%);
+  color: #fff;
+  padding: 50px 0;
+}
+
+.productos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 1rem;
+}
+
+.productos--lista {
+  color: #f2f2f2;
+  list-style: none;
+}
+
+.producto {
+  display: block;
+  padding: 2rem;
+  margin: 0.5rem;
+  border: 1px;
+  border-color: black;
+  border: 1px solid #e7a137;
+}
+
+/*-----promo-----*/
+
+.promo {
+  margin-top: 50px;
+  background-color: #f1a83b;
+  color: #111;
+  font-weight: 700;
+}
+
+.promo-u {
+  margin-bottom: 50px;
+  border: 11px solid #f1a83b;
+}
+
+/*-----Terminos-----*/
+
+.terminos {
+  padding: 3rem 0;
+}
+
+/*--- Tablet ---*/
+
+@media (min-width: 768px) {
+
   .productos {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 100%;
-    border: 1px solid #e7a137;
-    padding: 1rem;
-  }
-  
-  .productos--lista {
-  color: #F2F2F2;
-    list-style: none;
-  }
-  
-  .producto {
-    display: block;
-    padding: 2rem;
-    margin: .5rem;
-    border: 1px;
-    border-color: black;
-    border: 1px solid #e7a137;
-    background-color: #2E3559;
-  }
-  
-  /*-----Terminos-----*/
-
-  .terminos {
-      padding: 3rem 0;
+    flex-direction: row;
   }
 
-  /*--- Tablet ---*/
-  
-  @media (min-width: 480px) {
-    .video {
-      width: 80vw;
-      height: 50vh;
+    a {
+      margin: 0 10px;
     }
-  
-    .productos {
-      display: flex;
-      flex-direction: row;
-    }
-  
-    .redes {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 10px;
+  }
 
-      a {
-        margin: 0 10px;
-      }
-    }
-  
+
+/*---Desktop---*/
+
+@media (min-width: 1200px) {
+  /*-----Botones-----*/
+  .boton {
+    border-radius: 20px;
   }
-  
-  /*---Desktop---*/
-  
-  @media (min-width: 1200px) {
-  
-  
-    /*-----Botones-----*/
-     .boton {
-       border-radius: 20px;
-     }
-    
-     .redes a{
-       margin: 0 10px;
-     }
-    
-    /*-----Hero-----*/
-    .hero {
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-    }
-  
-    .redes {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    
-    /*---video y iframe---*/
-    
-    .video {
-      width: 50vw;
-      height: 50vh;
-    }
-    
-    /*-----ListaDeProductos-----*/
-    
-    .productos {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: space-evenly;
-      width: 100%;
-      border: 1px solid #e7a137;
-      padding: 1rem;
-    }
-    
-    .producto {
-      display: block;
-      padding: 2rem;
-      border: 1px;
-      border-color: black;
-      border: 1px solid #e7a137;
-      background-color: #2E3559;
-    }
+
+  .redes a {
+    margin: 0 10px;
   }
-  
+}

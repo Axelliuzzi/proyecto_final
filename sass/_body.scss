@@ -2,13 +2,35 @@
   padding: 0;
   margin: 0;
 }
+
+
 /*-----Generales------*/
- body {
-   background-image: linear-gradient(to top, $color-2 0%,#2E3559 50% );
-   font-family: "Krub", sans-serif;
-   font-style: inherit;
-   text-align: center;
- }
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #444444;
+}
+
+a {
+  color: #fab037;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ea6981;
+  text-decoration: none;
+}
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Open Sans', sans-serif;
+}
 
  .empresa {
    background: #fff;
@@ -18,7 +40,22 @@
    background: #fff;
    height: 100vh;
    padding-top: 4rem;
+   background-image: radial-gradient(circle at 0% 0%, #ffff4f 0, #fffd44 12.5%, #ffe53d 25%, #ffcb39 37.5%, #faaf36 50%, #e89535 62.5%, #d87e35 75%, #ca6b36 87.5%, #bd5c38 100%);
+   color: #111;
+   font-weight: 700;
+
+   .section-title h3 {
+    color: #111;
+    font-weight: 700;
+  }
+
+  .section-title p {
+    color: #111;
+    font-weight: 700;
+  }
+  
  }
+
 
 /*-----Botones-----*/
  .boton {
@@ -43,26 +80,41 @@
   }
 }
 
-
- .redes a{
-   background-color: #D9D9D9;
-   color: #0D0D0D;
-
-   &:hover {
-    background-color: $color-2;
-    color: #D9D9D9;
-  }
- }
-
-
 /*---Titulos---*/
 
 .title {
-  color: #e7a137;
+  color: #fff;
   padding: 1rem;
   font-size: 32px;
   font-weight: 700;
   text-transform: uppercase;
+  text-align: center;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+
+  p {
+    margin: 15px auto 0 auto;
+    font-weight: 400;
+  }
+
+  h3 {
+    margin: 15px 0 0 0;
+    font-size: 32px;
+    font-weight: 400;
+
+    span {
+      font-weight: bold;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-title p {
+    width: 50%;
+  }
 }
 
 /*---Parrafos---*/
